@@ -58,6 +58,7 @@ let g:NERDTreeMapChangeRoot =  "`"
 
 nmap <Leader>] :NERDTreeTabsToggle<CR>
 nnoremap <Space>c :NERDTreeCWD<CR>
+map <leader>r :NERDTreeFind<CR>
 let NERDTreeMinimalUI=1
 let NERDTreeDirArrows=0
 let NERDTreeQuitOnOpen = 1
@@ -180,9 +181,9 @@ map <Space>e <Plug>CamelCaseMotion_e
 colorscheme wombat256mod
 
 let g:multi_cursor_use_default_mapping=0
-let g:multi_cursor_next_key='<C-n>'
+let g:multi_cursor_next_key='<C-d>'
 let g:multi_cursor_prev_key='<C-p>'
-let g:multi_cursor_skip_key='<C-x>'
+let g:multi_cursor_skip_key='<C-k>'
 let g:multi_cursor_quit_key='<Esc>'
 let g:multi_cursor_start_key='<F6>'
 let g:ctrlp_max_depth = 70
@@ -222,3 +223,7 @@ let g:tagbar_type_go = {
     \ 'ctagsbin'  : 'gotags',
     \ 'ctagsargs' : '-sort -silent'
     \ }
+nnoremap <C-T> :GoTestFunc<CR>
+nnoremap <C-T-A> :GoTest<CR>
+nnoremap <C-P> GoDecls<CR>
+nnoremap <f12> :GoDef<CR>
