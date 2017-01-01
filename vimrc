@@ -29,6 +29,7 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'klen/python-mode'
 Plugin 'valloric/youcompleteme'
 Plugin 'easymotion/vim-easymotion'
+Plugin 'jreybert/vimagit'
 "Front End
 Plugin 'pangloss/vim-javascript'
 Plugin 'ap/vim-css-color'
