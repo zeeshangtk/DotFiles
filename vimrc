@@ -26,6 +26,7 @@ Plugin 'ervandew/supertab'
 Plugin 'ConradIrwin/vim-bracketed-paste'
 Plugin 'gcmt/wildfire.vim'
 Plugin 'Yggdroot/indentLine'
+Plugin 'klen/python-mode'
 
 "Front End
 Plugin 'pangloss/vim-javascript'
@@ -227,3 +228,4 @@ nnoremap <C-T> :GoTestFunc<CR>
 nnoremap <C-T-A> :GoTest<CR>
 nnoremap <C-P> GoDecls<CR>
 nnoremap <f12> :GoDef<CR>
+let g:pymode_python = 'python3'
