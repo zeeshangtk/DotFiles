@@ -27,7 +27,8 @@ Plugin 'ConradIrwin/vim-bracketed-paste'
 Plugin 'gcmt/wildfire.vim'
 Plugin 'Yggdroot/indentLine'
 Plugin 'klen/python-mode'
-
+Plugin 'valloric/youcompleteme'
+Plugin 'easymotion/vim-easymotion'
 "Front End
 Plugin 'pangloss/vim-javascript'
 Plugin 'ap/vim-css-color'
@@ -59,7 +60,7 @@ let g:NERDTreeMapChangeRoot =  "`"
 
 nmap <Leader>] :NERDTreeTabsToggle<CR>
 nnoremap <Space>c :NERDTreeCWD<CR>
-map <leader>r :NERDTreeFind<CR>
+map <Leader>r :NERDTreeFind<CR>
 let NERDTreeMinimalUI=1
 let NERDTreeDirArrows=0
 let NERDTreeQuitOnOpen = 1
@@ -228,4 +229,28 @@ nnoremap <C-T> :GoTestFunc<CR>
 nnoremap <C-T-A> :GoTest<CR>
 nnoremap <C-P> GoDecls<CR>
 nnoremap <f12> :GoDef<CR>
+
 let g:pymode_python = 'python3'
+let g:pymode_rope_goto_definition_bind = "<f12>"
+
+
+" disable arrow keys
+no <up> ddkP
+no <down> ddp
+no <left> <Nop>
+no <right> <Nop>
+
+ino <down> <Nop>
+ino <left> <Nop>
+ino <right> <Nop>
+ino <up> <Nop>
+
+vno <down> <Nop>
+vno <left> <Nop>
+vno <right> <Nop>
+vno <up> <Nop>
+
+" Easy motion setting
+map <Leader> <Plug>(easymotion-prefix)
+map  <Leader>f <Plug>(easymotion-bd-f)
+nmap <Leader>f <Plug>(easymotion-overwin-f)
